@@ -18,6 +18,12 @@ body,
   height: 100%;
 }
 
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .dndflow aside {
   border-right: 1px solid #eee;
   padding: 15px 10px;
@@ -47,6 +53,14 @@ body,
 
 .dndflow .dndnode.output {
   border-color: #ff0072;
+}
+
+.dndflow .dndnode.dragging {
+  opacity: 0.5;
+}
+
+.save-workflow {
+  border-color: green;
 }
 
 .dndflow .reactflow-wrapper {
